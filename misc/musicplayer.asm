@@ -985,7 +985,7 @@ SongInfo:
     db "Bicycle@", 3, 1, 0
     db "Hall of Fame@", 3, 1, 0
     db "Viridian City@", 3, 1, 0
-    db "Celedon City@", 3, 1, 0
+    db "Celadon City@", 3, 1, 0
     db "Victory! Trainer@", 3, 1, 0
     db "Victory! Wild@", 3, 1, 0
     db "Victory! Champion@", 3, 1, 0
@@ -1092,7 +1092,7 @@ SongInfo:
     db "Route 11@",  1, 1, 0
     db "Lavender Town@",  1, 1, 0
     db "Pokémon Tower@",  1, 1, 0
-    db "Celedon City@",  1, 1, 0
+    db "Celadon City@",  1, 1, 0
     db "Game Corner@",  1, 1, 0
     db "Rocket Hideout@",  1, 1, 0
     db "Bicycle@",  1, 1, 0
