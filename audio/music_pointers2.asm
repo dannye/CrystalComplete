@@ -50,9 +50,9 @@
 	dbw BANK(Music_CherrygroveCity), Music_CherrygroveCity ; 0xf5b03
 	dbw BANK(Music_LookKimonoGirl), Music_LookKimonoGirl ; 0xf79b8
 	dbw BANK(Music_UnionCave), Music_UnionCave ; 0xf5c60
-	dbw BANK(Music_SinnohWildBattle), Music_SinnohWildBattle ; 0xf5dc5
-	dbw BANK(Music_SinnohTrainerBattle), Music_SinnohTrainerBattle ; 0xf6096
-	dbw BANK(Music_Route206), Music_Route206 ; 0xefc01
+	dbw BANK(Music_JohtoWildBattle), Music_JohtoWildBattle ; 0xf5dc5
+	dbw BANK(Music_JohtoTrainerBattle), Music_JohtoTrainerBattle ; 0xf6096
+	dbw BANK(Music_Route30), Music_Route30 ; 0xefc01
 	dbw BANK(Music_EcruteakCity), Music_EcruteakCity ; 0xef2d0
 	dbw BANK(Music_VioletCity), Music_VioletCity ; 0xf0000
 	dbw BANK(Music_JohtoGymBattle), Music_JohtoGymBattle ; 0xea50d
@@ -70,7 +70,7 @@
 	dbw BANK(Music_LookPokemaniac), Music_LookPokemaniac ; 0xebde1
 	dbw BANK(Music_LookSage), Music_LookSage ; 0xee35e
 	dbw BANK(Music_NewBarkTown), Music_NewBarkTown ; 0xeb2d3
-	dbw BANK(Music_JubilifeCity), Music_JubilifeCity ; 0xeb453
+	dbw BANK(Music_GoldenrodCity), Music_GoldenrodCity ; 0xeb453
 	dbw BANK(Music_Vermilion), Music_Vermilion ; 0xeb676
 	dbw BANK(Music_PokemonChannel), Music_PokemonChannel ; 0xee45f
 	dbw BANK(Music_PokeFluteChannel), Music_PokeFluteChannel ; 0xf7b13
@@ -83,7 +83,7 @@
 	dbw BANK(Music_Route37), Music_Route37 ; 0xee94b
 	dbw BANK(Music_RocketHideout), Music_RocketHideout ; 0xeeb75
 	dbw BANK(Music_DragonsDen), Music_DragonsDen ; 0xeece8
-	dbw BANK(Music_SinnohWildBattle), Music_SinnohWildBattle ; 0xf605c
+	dbw BANK(Music_JohtoWildBattleNight), Music_JohtoWildBattleNight ; 0xf605c
 	dbw BANK(Music_RuinsOfAlphRadio), Music_RuinsOfAlphRadio ; 0xeedcb
 	dbw BANK(Music_SuccessfulCapture), Music_SuccessfulCapture ; 0xf4602
 	dbw BANK(Music_Route26), Music_Route26 ; 0xeefb2
@@ -116,15 +116,8 @@
 	dbw BANK(Music_BattleTowerLobby), Music_BattleTowerLobby ; 0x17948b
 	dbw BANK(Music_MobileCenter), Music_MobileCenter ; 0x17961d
 
-;Remixes and custom songs:
+; Prism songs:
 
-	dbw BANK(Music_JohtoGSC), Music_JohtoGSC 
-	dbw BANK(Music_CeruleanGSC), Music_CeruleanGSC
-	dbw BANK(Music_CinnabarGSC), Music_CinnabarGSC
-	dbw BANK(Music_NuggetBridge), Music_NuggetBridge
-	dbw BANK(Music_Shop), Music_Shop
-	dbw BANK(Music_PokeathelonFinal), Music_PokeathelonFinal
-	dbw BANK(Music_PokeRadar), Music_PokeRadar
 	dbw BANK(Music_NaljoWildBattle), Music_NaljoWildBattle
 	dbw BANK(Music_NaljoGymBattle), Music_NaljoGymBattle
 	dbw BANK(Music_PalletBattle), Music_PalletBattle

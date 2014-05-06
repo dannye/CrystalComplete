@@ -119,17 +119,16 @@ EXTRA_SONGS_1             EQU $7
 EXTRA_SONGS_2             EQU $33
 RBY_SONGS_1               EQU $81
 RBY_SONGS_2               EQU $82
-RSE_SONGS_1               EQU $83
-RSE_SONGS_2               EQU $84
-DPPT_SONGS_1              EQU $85
-DPPT_SONGS_2              EQU $86
-CUSTOM_SONGS_1            EQU $87
-CUSTOM_SONGS_2            EQU $88
-TCG_SONGS_1               EQU $89
-TCG_SONGS_2               EQU $8A
-TCG2_SONGS_1              EQU $8B
-TCG2_SONGS_2              EQU $8C
-TCG2_SONGS_3              EQU $8D
+TCG_SONGS_1               EQU $83
+TCG_SONGS_2               EQU $84
+TCG2_SONGS_1              EQU $85
+TCG2_SONGS_2              EQU $86
+TCG2_SONGS_3              EQU $87
+PINBALL_SONGS_1           EQU $88
+PINBALL_SONGS_2           EQU $89
+CUSTOM_SONGS_1            EQU $8A
+CUSTOM_SONGS_2            EQU $8B
+
 
 SOUND_EFFECTS             EQU $3C
 CRYSTAL_SOUND_EFFECTS     EQU $5E

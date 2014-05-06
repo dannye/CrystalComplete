@@ -170,27 +170,6 @@
 	dbw BANK(Music_UnusedSong), Music_UnusedSong 
 	dbw BANK(Music_YellowUnusedSong), Music_YellowUnusedSong 
 
-;Diamond and Pearl
-	dbw BANK(Music_SinnohWildBattle), Music_SinnohWildBattle 
-	dbw BANK(Music_SinnohTrainerBattle), Music_SinnohTrainerBattle 
-	dbw BANK(Music_JubilifeCity), Music_JubilifeCity 
-	dbw BANK(Music_Route206), Music_Route206 
-	dbw BANK(Music_PokeRadar), Music_PokeRadar
-
-;Remixes and custom songs:
-
-	dbw BANK(Music_CeruleanGSC), Music_CeruleanGSC
-	dbw BANK(Music_CinnabarGSC), Music_CinnabarGSC
-	dbw BANK(Music_CinnabarRemix), Music_CinnabarRemix
-	dbw BANK(Music_NuggetBridge), Music_NuggetBridge
-	dbw BANK(Music_Shop), Music_Shop
-	dbw BANK(Music_PokeathelonFinal), Music_PokeathelonFinal
-	dbw BANK(Music_JohtoGSC), Music_JohtoGSC 
-	dbw BANK(Music_KantoGymLeaderRemix), Music_KantoGymLeaderRemix 
-	dbw BANK(Music_NaljoWildBattle), Music_NaljoWildBattle
-	dbw BANK(Music_NaljoGymBattle), Music_NaljoGymBattle
-	dbw BANK(Music_PalletBattle), Music_PalletBattle
-
 ; TCG songs:
 
 	dbw BANK(Music_TCGTitleScreen), Music_TCGTitleScreen
@@ -270,3 +249,18 @@
 	dbw BANK(Music_Pinballmeowthstage), Music_Pinballmeowthstage
 	dbw BANK(Music_Pinballendcredits), Music_Pinballendcredits
 	dbw BANK(Music_Pinballnameentry), Music_Pinballnameentry
+
+; Prism songs:
+
+	dbw BANK(Music_NaljoWildBattle), Music_NaljoWildBattle
+	dbw BANK(Music_NaljoGymBattle), Music_NaljoGymBattle
+	dbw BANK(Music_PalletBattle), Music_PalletBattle
+
+; Prototype songs:
+
+	dbw BANK(Music_PrototypePallet), Music_PrototypePallet
+	dbw BANK(Music_PrototypeRoute1), Music_PrototypeRoute1
+	dbw BANK(Music_PrototypeViridian), Music_PrototypeViridian
+	dbw BANK(Music_PrototypePokecenter), Music_PrototypePokecenter
+	dbw BANK(Music_PrototypeGym), Music_PrototypeGym
+	

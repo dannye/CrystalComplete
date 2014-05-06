@@ -212,31 +212,6 @@ INCLUDE "audio/music/RBY/surfingpikachu.asm"
 INCLUDE "audio/music/RBY/meetjessiejames.asm"
 INCLUDE "audio/music/RBY/yellowunusedsong.asm"
 
-SECTION "Custom Songs 1", ROMX, BANK[CUSTOM_SONGS_1]
-
-INCLUDE "audio/music/custom/johtoGSC.asm"
-INCLUDE "audio/music/custom/ceruleanGSC.asm"
-INCLUDE "audio/music/custom/cinnabarGSC.asm"
-INCLUDE "audio/music/custom/nuggetbridge.asm"
-INCLUDE "audio/music/custom/shop.asm"
-INCLUDE "audio/music/custom/pokeathelonfinal.asm"
-
-SECTION "Custom Songs 2", ROMX, BANK[CUSTOM_SONGS_2]
-
-INCLUDE "audio/music/custom/naljowildbattle.asm"
-INCLUDE "audio/music/custom/naljogymbattle.asm"
-INCLUDE "audio/music/custom/palletbattle.asm"
-INCLUDE "audio/music/custom/cinnabarremix.asm"
-INCLUDE "audio/music/custom/kantogymleaderremix.asm"
-
-SECTION "DPPt Songs 1", ROMX, BANK[DPPT_SONGS_1]
-
-INCLUDE "audio/music/DPPt/pokeradar.asm"
-INCLUDE "audio/music/DPPt/sinnohtrainer.asm"
-INCLUDE "audio/music/DPPt/sinnohwild.asm"
-INCLUDE "audio/music/DPPt/route206.asm"
-INCLUDE "audio/music/DPPt/jubilifecity.asm"
-
 SECTION "TCG Songs 1", ROMX, BANK[TCG_SONGS_1]
 INCLUDE "audio/music/TCG/titlescreen.asm"
 INCLUDE "audio/music/TCG/dueltheme1.asm"
@@ -296,7 +271,7 @@ INCLUDE "audio/music/TCG2/diddly4.asm"
 INCLUDE "audio/music/TCG2/diddly5.asm"
 INCLUDE "audio/music/TCG2/diddly6.asm"
 
-SECTION "Pinball Songs", ROMX
+SECTION "Pinball Songs", ROMX, BANK[PINBALL_SONGS_1]
 INCLUDE "audio/music/pinball/redfield.asm"
 INCLUDE "audio/music/pinball/catchem_red.asm"
 INCLUDE "audio/music/pinball/hurryup_red.asm"
@@ -311,7 +286,7 @@ INCLUDE "audio/music/pinball/gameover.asm"
 INCLUDE "audio/music/pinball/diglettstage_digletts.asm"
 INCLUDE "audio/music/pinball/diglettstage_dugtrio.asm"
 
-SECTION "Pinball Songs 2", ROMX
+SECTION "Pinball Songs 2", ROMX, BANK[PINBALL_SONGS_2]
 INCLUDE "audio/music/pinball/seelstage.asm"
 INCLUDE "audio/music/pinball/titlescreen.asm"
 INCLUDE "audio/music/pinball/mewtwostage.asm"
@@ -320,6 +295,18 @@ INCLUDE "audio/music/pinball/fieldselect.asm"
 INCLUDE "audio/music/pinball/meowthstage.asm"
 INCLUDE "audio/music/pinball/endcredits.asm"
 INCLUDE "audio/music/pinball/nameentry.asm"
+
+SECTION "Custom Songs 1", ROMX, BANK[CUSTOM_SONGS_1]
+INCLUDE "audio/music/custom/naljowildbattle.asm"
+INCLUDE "audio/music/custom/naljogymbattle.asm"
+INCLUDE "audio/music/custom/palletbattle.asm"
+
+SECTION "Custom Songs 2", ROMX, BANK[CUSTOM_SONGS_2]
+INCLUDE "audio/music/custom/prototype_pallet.asm"
+INCLUDE "audio/music/custom/prototype_route1.asm"
+INCLUDE "audio/music/custom/prototype_viridian.asm"
+INCLUDE "audio/music/custom/prototype_pokecenter.asm"
+INCLUDE "audio/music/custom/prototype_gym.asm"
 
 SECTION "Sound Effects", ROMX, BANK[SOUND_EFFECTS]
 

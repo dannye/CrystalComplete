@@ -116,16 +116,8 @@
 	dbw BANK(Music_BattleTowerLobby), Music_BattleTowerLobby ; 0x17948b
 	dbw BANK(Music_MobileCenter), Music_MobileCenter ; 0x17961d
 
-;Remixes and custom songs:
+; Prism songs:
 
-	dbw BANK(Music_JohtoGSC), Music_JohtoGSC 
-	dbw BANK(Music_CeruleanGSC), Music_CeruleanGSC
-	dbw BANK(Music_CinnabarGSC), Music_CinnabarGSC
-	dbw BANK(Music_NuggetBridge), Music_NuggetBridge
-	dbw BANK(Music_Shop), Music_Shop
-	dbw BANK(Music_PokeathelonFinal), Music_PokeathelonFinal
-	dbw BANK(Music_PokeRadar), Music_PokeRadar
 	dbw BANK(Music_NaljoWildBattle), Music_NaljoWildBattle
 	dbw BANK(Music_NaljoGymBattle), Music_NaljoGymBattle
 	dbw BANK(Music_PalletBattle), Music_PalletBattle
-	

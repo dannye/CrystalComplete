@@ -3,7 +3,7 @@ INCLUDE "includes.asm"
 
 SECTION "Music_Player", ROMX, BANK[MUSIC_PLAYER]
 
-NUMSONGS EQU 241
+NUMSONGS EQU 233
 
 MusicTestGFX:
 INCBIN "gfx/misc/music_test.2bpp"
@@ -970,7 +970,7 @@ SongInfo:
     db "Route 11@", 3, 1, 0
     db "Magnet Train@", 3, 1, 0
     db "Vs. Kanto Gym Leader@", 3, 1, 0
-    db "Vs. Kanto Trainer@", 3, 1, 2
+    db "Vs. Kanto Trainer@", 3, 1, 0
     db "Vs. Kanto Wild@", 3, 1, 0
     db "Pokémon Center@", 3, 1, 0
     db "Spotted! Hiker@", 3, 1, 0
@@ -1117,93 +1117,85 @@ SongInfo:
     db "Victory! Champion@",  1, 1, 0
     db "Unused@",  1, 1, 0
     db "Unused@", 2, 1, 0
-    db "Vs. Wild@", 6, 1, 2
-    db "Vs. Trainer@", 6, 1, 2
-    db "Jubilife City@", 6, 1, 2
-    db "Route 206@", 6, 1, 2
-    db "PokéRadar@", 6, 1, 2
-    db "Cerulean City@", 7, 1, 2
-    db "Cinnabar Island@", 7, 1, 2
-    db "Cinnabar Island     GSC Remix@", 1, 1, 2
-    db "Route 24@", 7, 1, 2
-    db "Shop@", 7, 1, 2
-    db "Pokéathelon Finals@", 7, 1, 2
-    db "Vs. Johto Trainer   GS Kanto Style Remix@", 3, 1, 2
-    db "Vs. Kanto Gym LeaderRemix@", 1, 1, 2
-    db "Vs. Naljo Wild@", 11, 3, 2
-    db "Vs. Naljo Gym Leader@", 11, 4, 2
-    db "Vs. Pallet Patrol@", 11, 5, 2
-	db "Title Screen@", 12, 6, 7
-	db "Duel Theme 1@", 12, 6, 7
-	db "Duel Theme 2@", 12, 6, 7
-	db "Duel Theme 3@", 12, 6, 7
-	db "Pause Menu@", 12, 6, 7
-	db "PC/Main Menu@", 12, 6, 7
-	db "Deck Machine@", 12, 6, 7
-	db "Card Pop@", 12, 6, 7
-	db "Overworld@", 12, 6, 7
-	db "Pokemon Dome@", 12, 6, 7
-	db "Challenge Hall@", 12, 6, 7
-	db "Club 1@", 12, 6, 7
-	db "Club 2@", 12, 6, 7
-	db "Club 3@", 12, 6, 7
-	db "Ronald@", 12, 6, 7
-	db "Imakuni@", 12, 6, 7
-	db "Hall Of Honor@", 12, 6, 7
-	db "Credits@", 12, 6, 7
-	db "Match Start 1@", 12, 6, 7
-	db "Match Start 2@", 12, 6, 7
-	db "Match Start 3@", 12, 6, 7
-	db "Match Victory@", 12, 6, 7
-	db "Match Loss@", 12, 6, 7
-	db "Dark Diddly@", 12, 6, 7
-	db "Booster Pack@", 12, 6, 7
-	db "Medal@", 12, 6, 7
-	db "Titlescreen@", 13, 6, 7
-	db "Here Comes GR@", 13, 6, 7
-	db "GR Overworld@", 13, 6, 7
-	db "Fort 1@", 13, 6, 7
-	db "Fort 2@", 13, 6, 7
-	db "Fort 3@", 13, 6, 7
-	db "Fort 4@", 13, 6, 7
-	db "GR Castle@", 13, 6, 7
-	db "GR Challenge Cup@", 13, 6, 7
-	db "Game Corner@", 13, 6, 7
-	db "GR Blimp@", 13, 6, 7
-	db "GR Duel Theme 1@", 13, 6, 7
-	db "GR Duel Theme 2@", 13, 6, 7
-	db "GR Duel Theme 3@", 13, 6, 7
-	db "Ishihara@", 13, 6, 7
-	db "Imakuni 2@", 13, 6, 7
-	db "Credits@", 13, 6, 7
-	db "Diddly 1@", 13, 6, 7
-	db "Diddly 2@", 13, 6, 7
-	db "Diddly 3@", 13, 6, 7
-	db "Diddly 4@", 13, 6, 7
-	db "Diddly 5@", 13, 6, 7
-	db "Diddly 6@", 13, 6, 7
-	db "Red Field Theme@"                         , 14, 8, 0
-	db "Catch 'Em & Evolution Mode in Red Field@" , 14, 8, 0
-	db "Hurry Up! Red Field@"                     , 14, 8, 0
-	db "Pokedex@"                                 , 14, 8, 0
-	db "Gengar Stage - Gastly in the Graveyard@"  , 14, 8, 0
-	db "Gengar Stage - Haunter in the Graveyard@" , 14, 8, 0
-	db "Gengar Stage - Gengar in the Graveyard@"  , 14, 8, 0
-	db "Blue Field Theme@"                        , 14, 8, 0
-	db "Catch 'Em & Evolution Mode in Blue Field@", 14, 8, 0
-	db "Hurry up! Blue Field@"                    , 14, 8, 0
-	db "Hi-Score Screen@"                         , 14, 8, 0
-	db "Game Over@"                               , 14, 8, 0
-	db "Diglett Stage - Whack the Digletts@"      , 14, 8, 0
-	db "Diglett Stage - Whack Dugtrio@"           , 14, 8, 0
-	db "Seel Stage@"                              , 14, 8, 0
-	db "Title Screen@"                            , 14, 8, 0
-	db "Mewtwo Stage@"                            , 14, 8, 0
-	db "Options@"                                 , 14, 8, 0
-	db "Field Select@"                            , 14, 8, 0
-	db "Meowth Stage@"                            , 14, 8, 0
-	db "End Credits@"                             , 14, 8, 0
-	db "Name Entry@"                              , 14, 8, 0
+	db "Title Screen@", 5, 6, 7
+	db "Duel Theme 1@", 5, 6, 7
+	db "Duel Theme 2@", 5, 6, 7
+	db "Duel Theme 3@", 5, 6, 7
+	db "Pause Menu@", 5, 6, 7
+	db "PC/Main Menu@", 5, 6, 7
+	db "Deck Machine@", 5, 6, 7
+	db "Card Pop@", 5, 6, 7
+	db "Overworld@", 5, 6, 7
+	db "Pokemon Dome@", 5, 6, 7
+	db "Challenge Hall@", 5, 6, 7
+	db "Club 1@", 5, 6, 7
+	db "Club 2@", 5, 6, 7
+	db "Club 3@", 5, 6, 7
+	db "Ronald@", 5, 6, 7
+	db "Imakuni@", 5, 6, 7
+	db "Hall Of Honor@", 5, 6, 7
+	db "Credits@", 5, 6, 7
+	db "Match Start 1@", 5, 6, 7
+	db "Match Start 2@", 5, 6, 7
+	db "Match Start 3@", 5, 6, 7
+	db "Match Victory@", 5, 6, 7
+	db "Match Loss@", 5, 6, 7
+	db "Dark Diddly@", 5, 6, 7
+	db "Booster Pack@", 5, 6, 7
+	db "Medal@", 5, 6, 7
+	db "Titlescreen@", 6, 6, 7
+	db "Here Comes GR@", 6, 6, 7
+	db "GR Overworld@", 6, 6, 7
+	db "Fort 1@", 6, 6, 7
+	db "Fort 2@", 6, 6, 7
+	db "Fort 3@", 6, 6, 7
+	db "Fort 4@", 6, 6, 7
+	db "GR Castle@", 6, 6, 7
+	db "GR Challenge Cup@", 6, 6, 7
+	db "Game Corner@", 6, 6, 7
+	db "GR Blimp@", 6, 6, 7
+	db "GR Duel Theme 1@", 6, 6, 7
+	db "GR Duel Theme 2@", 6, 6, 7
+	db "GR Duel Theme 3@", 6, 6, 7
+	db "Ishihara@", 6, 6, 7
+	db "Imakuni 2@", 6, 6, 7
+	db "Credits@", 6, 6, 7
+	db "Diddly 1@", 6, 6, 7
+	db "Diddly 2@", 6, 6, 7
+	db "Diddly 3@", 6, 6, 7
+	db "Diddly 4@", 6, 6, 7
+	db "Diddly 5@", 6, 6, 7
+	db "Diddly 6@", 6, 6, 7
+	db "Red Field Theme@"                         , 7, 8, 0
+	db "Catch 'Em & Evolution Mode in Red Field@" , 7, 8, 0
+	db "Hurry Up! Red Field@"                     , 7, 8, 0
+	db "Pokedex@"                                 , 7, 8, 0
+	db "Gengar Stage - Gastly in the Graveyard@"  , 7, 8, 0
+	db "Gengar Stage - Haunter in the Graveyard@" , 7, 8, 0
+	db "Gengar Stage - Gengar in the Graveyard@"  , 7, 8, 0
+	db "Blue Field Theme@"                        , 7, 8, 0
+	db "Catch 'Em & Evolution Mode in Blue Field@", 7, 8, 0
+	db "Hurry up! Blue Field@"                    , 7, 8, 0
+	db "Hi-Score Screen@"                         , 7, 8, 0
+	db "Game Over@"                               , 7, 8, 0
+	db "Diglett Stage - Whack the Digletts@"      , 7, 8, 0
+	db "Diglett Stage - Whack Dugtrio@"           , 7, 8, 0
+	db "Seel Stage@"                              , 7, 8, 0
+	db "Title Screen@"                            , 7, 8, 0
+	db "Mewtwo Stage@"                            , 7, 8, 0
+	db "Options@"                                 , 7, 8, 0
+	db "Field Select@"                            , 7, 8, 0
+	db "Meowth Stage@"                            , 7, 8, 0
+	db "End Credits@"                             , 7, 8, 0
+	db "Name Entry@"                              , 7, 8, 0
+    db "Vs. Naljo Wild@", 8, 3, 2
+    db "Vs. Naljo Gym Leader@", 8, 4, 2
+    db "Vs. Pallet Patrol@", 8, 5, 2
+	db "Pallet Town@", 9, 9, 7
+	db "Route 1@", 9, 9, 7
+	db "Viridian City@", 9, 9, 7
+	db "Pokecenter@", 9, 9, 7
+	db "Gym@", 9, 9, 7
     db -1
 	
 Origin:
@@ -1211,16 +1203,11 @@ Origin:
 	db 02, "Pokémon Yellow@"
 	db 03, "Pokémon Gold@"
 	db 04, "Pokémon Crystal@"
-	db 05, "Pokémon Emerald@"
-	db 06, "Pokémon Platinum@"
-	db 07, "Pokémon HeartGold@"
-	db 08, "Pokémon Black@"
-	db 09, "Pokémon Black 2@"
-	db 10, "Pokémon X and Y@"
-	db 11, "Pokémon Prism@"
-	db 12, "Pokémon TCG@"
-	db 13, "Pokémon TCG 2@"
-	db 14, "Pokémon Pinball@"
+	db 05, "Pokémon TCG@"
+	db 06, "Pokémon TCG 2@"
+	db 07, "Pokémon Pinball@"
+	db 08, "Pokémon Prism@"
+	db 09, "Pokémon Prototype@"
 	db -1
 	
 Artist:
@@ -1232,4 +1219,5 @@ Artist:
 	db 06, "Ichiro Shimakura@"
 	db 07, "Danny-E 33@"
 	db 08, "Go Ichinose (?)@"
+	db 09, "Mickey-A 42@"
 	db -1
