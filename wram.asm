@@ -30,8 +30,11 @@ wC3Vol:: ds 1
 wC3VolSub:: ds 1
 wC4Vol:: ds 1
 wC4VolSub:: ds 1
+wNoteEnded:: ds 3
 wSelectorTop:: ds 1
 wSelectorCur:: ds 1
+wChannelSelector:: ds 1
+wChannelSelectorSwitches:: ds 4
 
 SECTION "stack",WRAM0[$c0ff]
 Stack:: ; c0ff
