@@ -72,9 +72,9 @@ MPLoadPalette:
 	ret
 
 MusicPlayer::
-	;ld de, 01
-	;call PlayMusic
-	;call WhiteBGMap
+	ld a, [GBPrinter]
+	or 2 ;sets bit for Whole soundtrack
+	ld [GBPrinter], a
 	call ClearTileMap
 	hlcoord 6, 5
 	ld de, LoadingText
@@ -121,6 +121,12 @@ MusicPlayer::
 	ld [wChannelSelectorSwitches+2], a
 	ld [wChannelSelectorSwitches+3], a
 
+	ld de, 01
+	call PlayMusic
+
+	ld a, 1
+	ld [wSongSelection], a
+
 MPlayerTilemap:
 
 	ld bc, MPTilemapEnd-MPTilemap
@@ -144,7 +150,6 @@ MPlayerTilemap:
 	call DrawNotes
 	
 	call GetJoypad
-	jbutton B_BUTTON, .exit
 	jbutton D_LEFT, .left
 	jbutton D_RIGHT, .right
 	jbutton D_DOWN, .down
@@ -187,7 +192,7 @@ MPlayerTilemap:
     ld a, 1
     jr .redraw
 .start
-    call SongSelector
+    call HideSongInfo
     jp MPlayerTilemap
 .redraw	
     ld [wSongSelection], a
@@ -365,10 +370,25 @@ MPlayerTilemap:
 	ld a, $ed
 	ret
 
+HideSongInfo:
+	ld bc, MPKeymapEnd-MPKeymap
+	ld hl, MPKeymap
+	decoord 0, 17
+	call CopyBytes
+	ld a, " "
+	hlcoord 0, 0
+	ld bc, 340
+	call ByteFill
+
+.loop
+	call UpdateVisualIntensity
+	call DelayFrame
+	call DrawNotes
+	call GetJoypad
+	jbutton B_BUTTON, .exit
+	jbutton START, .exit
+    jr .loop
 .exit
-    call ClearSprites
-    ld hl, rLCDC
-    res 2, [hl] ; 8x8 sprites
     ret
 
 DrawChData:

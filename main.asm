@@ -5106,8 +5106,7 @@ GameInit:: ; 642e
 	ld [hSCY], a
 	ld a, $90
 	ld [hWY], a
-	call WaitBGMap
-	jp Function620b
+	callba MainMenu
 ; 6454
 
 Function6454:: ; 6454
@@ -44766,8 +44765,7 @@ MainMenu: ; 49cdc
 	call Function49e09
 	ld hl, MenuDataHeader_0x49d14
 	call LoadMenuDataHeader
-	call Function49de4
-	call Function1c17
+	callba MusicPlayer
 	jr c, .quit
 	call ClearTileMap
 	ld a, [MenuSelection]
